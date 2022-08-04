@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    admin
+{% endblock %}
+
+
+{% block main %}
+
+
+
+<form class="form-outline" action="/admin" method="POST">
+    <div class="card mx-auto px-5 py-3 d-flex flex-column align-items-center">
+      <input class="form-control mb-3 w-50" name="customer" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </div>
+  </form>
+  <h2 class="mt-5 mb-3">Booking</h2>
+<table class="table" class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Room Type</th>
+      <th scope="col">Duration</th>
+      <th scope="col">Cost</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for books in booking %}
+    <tr>
+      <th scope="row">{{books.room_type}}</th>
+      <td>{{books.duration}}</td>
+      <td>${{books.total}}</td>
+      <td>{{books.date}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+    <h2 class="mt-5 mb-3">Services</h2>
+<table class="table" class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Service</th>
+      <th scope="col">Expense</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for val in new_values %}
+    <tr>
+
+      <th scope=></th>
+      <td>{{ ", ".join(val[0]) }}</td>
+      <td>${{ val[1] }}</td>
+      <td>{{ val[2] }}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

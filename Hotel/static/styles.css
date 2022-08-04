@@ -1,0 +1,75 @@
+/* body{
+    margin: 0;
+} */
+
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+.home-hero{
+    background-image : url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/6e/47/52/exterior.jpg?w=900&h=-1&s=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    color:#fff;
+}
+.description{
+    margin : 0 auto;
+    color : #fff;
+    width : 60%;
+}
+
+.resize{
+    width : 250px;
+    height : 200px;
+}
+.services{
+    width : 180px;
+    height : 150px;
+}
+.w-33{
+    width: 33.3%;
+}
+input[type="radio"], input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+}
+input[type="radio"]:checked + label {
+    outline: 3px solid #68b9ff78;
+    border-radius: 2%;
+}
+input[type="checkbox"]:checked + label {
+    outline: 3px solid #68b9ff78;
+    border-radius: 2%;
+}
